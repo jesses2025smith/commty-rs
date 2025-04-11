@@ -1,3 +1,8 @@
+[![Latest version](https://img.shields.io/crates/v/commty.svg)](https://crates.io/crates/commty)
+[![Documentation](https://docs.rs/commty/badge.svg)](https://docs.rs/commty)
+![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
+![Downloads](https://img.shields.io/crates/d/commty)
+
 # `commty`
 
 `commty` is a Rust library providing common types.

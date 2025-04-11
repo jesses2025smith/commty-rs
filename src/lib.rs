@@ -27,16 +27,29 @@
 ///
 /// #[cfg(target_endian = "little")]
 /// assert!(ByteOrder::Native.is_little());
+/// #[cfg(target_endian = "little")]
+/// assert!(!ByteOrder::Native.is_big());
 /// #[cfg(target_endian = "big")]
 /// assert!(!ByteOrder::Native.is_little());
-/// 
+/// #[cfg(target_endian = "big")]
+/// assert!(ByteOrder::Native.is_big());
 /// assert!(ByteOrder::Native.is_native());
+/// 
 /// let order = ByteOrder::Little;
 /// assert!(order.is_little());
 /// assert!(!order.is_big());
+/// #[cfg(target_endian = "little")]
+/// assert!(order.is_native());
+/// #[cfg(target_endian = "big")]
+/// assert!(!order.is_native());
+/// 
 /// let order = ByteOrder::Big;
 /// assert!(!order.is_little());
 /// assert!(order.is_big());
+/// #[cfg(target_endian = "little")]
+/// assert!(!order.is_native());
+/// #[cfg(target_endian = "big")]
+/// assert!(order.is_native());
 /// ``` 
 #[derive(Debug, Default, Copy, Clone, Eq, PartialEq, Hash)]
 pub enum ByteOrder {

@@ -1,11 +1,11 @@
 [package]
 name = "commty"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "Apache-2.0"
 authors = ["Jesse Smith <jesses2025smith@gmail.com>"]
 description = "`commty` is a Rust library providing common types."
-homepage = "https://github.com/jesses2025smith/commty"
-repository = "https://github.com/jesses2025smith/commty"
+homepage = "https://github.com/jesses2025smith/commty-rs"
+repository = "https://github.com/jesses2025smith/commty-rs"
 
 [dependencies]
